@@ -10,12 +10,12 @@ module "vpc" {
   single_nat_gateway   = var.single_nat_gateway
   enable_dns_hostnames = var.enable_dns_hostnames
   public_subnet_tags = {
-    "kubernetes.io/cluster/homeadvisor-test" = "owned"
+    "kubernetes.io/cluster/homeadvisor-test-allen-eks" = "owned"
     "kubernetes.io/role/elb"                  = "1"
     "type"                                    = "public"
   }
   private_subnet_tags = {
-    "kubernetes.io/cluster/homeadvisor-test" = "owned"
+    "kubernetes.io/cluster/homeadvisor-test-allen-eks" = "owned"
     "kubernetes.io/role/internal-elb"         = "1"
     "type"                                    = "private"
   }

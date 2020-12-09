@@ -7,17 +7,11 @@ node_groups_defaults = {
   disk_size = 100
 }
 
+enable_irsa = true
+
 irsa = {
   external-dns = {
     namespace                = "kube-system"
     iam_policy_document_path = "iam_policies/external_dns.json"
-  },
-  cluster-autoscaler = {
-    namespace                = "kube-system"
-    iam_policy_document_path = "iam_policies/cluster_autoscaler.json"
-  },
-  aws-load-balancer-controller = {
-    namespace                = "kube-system"
-    iam_policy_document_path = "iam_policies/aws_load_balancer_controller.json"
   }
 }

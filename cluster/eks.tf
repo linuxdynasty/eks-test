@@ -2,6 +2,7 @@
 module "eks" {
   source                                    = "terraform-aws-modules/eks/aws"
   version                                   = "13.2.1"
+  enable_irsa                               = var.enable_irsa
   cluster_name                              = var.cluster_name
   cluster_version                           = var.cluster_version
   cluster_log_retention_in_days             = var.cluster_log_retention_in_days

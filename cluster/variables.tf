@@ -36,6 +36,12 @@ variable "profile" {
   type        = string
 }
 
+variable "enable_irsa" {
+  description = "Enable IRSA"
+  type        = bool
+  default     = false
+}
+
 variable "irsa" {
   description = "Map of IAM roles and services accounts to create and match"
   type = map(
