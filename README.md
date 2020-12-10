@@ -34,9 +34,10 @@ I found this by running `kubectl get svc -n monitoring statsd-exporter -o yaml` 
 
 ## What I built manually.
 
-* The S3 Buckets for the terraform state.
-  https://homeadvisor-test-allen-terraform.s3-us-west-2.amazonaws.com/test/charts.tfstate
-  https://homeadvisor-test-allen-terraform.s3-us-west-2.amazonaws.com/test/eks.tfstate
-  https://homeadvisor-test-allen-terraform.s3-us-west-2.amazonaws.com/test/vpc.tfstate
-  https://homeadvisor-test-allen-kubeconfigs.s3-us-west-2.amazonaws.com/homeadvisor-test-allen-eks
-* The Route53 Hosted Zone allen-test.dynasticld.com:
+The S3 Buckets for the terraform state.
+* https://homeadvisor-test-allen-terraform.s3-us-west-2.amazonaws.com/test/charts.tfstate
+* https://homeadvisor-test-allen-terraform.s3-us-west-2.amazonaws.com/test/eks.tfstate
+* https://homeadvisor-test-allen-terraform.s3-us-west-2.amazonaws.com/test/vpc.tfstate
+* https://homeadvisor-test-allen-kubeconfigs.s3-us-west-2.amazonaws.com/homeadvisor-test-allen-eks
+
+The Route53 Hosted Zone is allen-test.dynasticld.com
